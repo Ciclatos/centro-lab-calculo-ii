@@ -17,6 +17,13 @@ Experiencia educativa en español sobre centroide, centro de masa y centro de gr
 - Separación explícita entre la resolución oficial del folleto y el modo exploración.
 - Ilustraciones técnicas de listón, partículas, figura compuesta, camión, varilla y asteroide.
 
+## Versión 3
+
+- Enunciados originales completos del Ticket de Salida en la etapa de comprensión.
+- Fórmulas, fracciones e integrales compuestas profesionalmente con KaTeX local.
+- Revelación progresiva de operaciones y resultados, sincronizada con cada visualización.
+- Navegación por subpasos con teclado, retroceso reversible y reinicio pedagógico completo.
+
 ## Ejecución local
 
 ```bash
