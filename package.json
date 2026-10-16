@@ -1,0 +1,9 @@
+{
+  "name": "centro-lab-calculo-ii",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/calculations.test.js",
+    "serve": "python3 -m http.server 4173 --directory dist"
+  }
+}

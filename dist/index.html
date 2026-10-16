@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Laboratorio interactivo de Cálculo II sobre centroide, centro de masa y centro de gravedad." />
+  <title>CENTRO — Laboratorio Interactivo de Cálculo II</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <button class="brand" data-route="home" aria-label="Ir a la portada"><span class="brand-mark">C</span><span>CENTRO</span></button>
+    <nav class="topnav" aria-label="Navegación principal">
+      <button data-route="home">Inicio</button>
+      <button data-route="theory">Fundamentos</button>
+      <button id="quickMenuBtn">Ejercicios <span>⌄</span></button>
+    </nav>
+    <div class="top-actions">
+      <button class="icon-btn" id="helpBtn" aria-label="Ver atajos de teclado">?</button>
+      <button class="presentation-btn" id="presentationBtn"><span>◧</span> Presentar</button>
+    </div>
+  </header>
+
+  <div class="quick-menu" id="quickMenu" aria-hidden="true">
+    <div class="quick-menu-head"><span>Ir directamente</span><button id="closeQuickMenu" aria-label="Cerrar">×</button></div>
+    <div id="quickMenuGrid"></div>
+  </div>
+
+  <main id="main" tabindex="-1"></main>
+
+  <div class="modal" id="helpModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+    <div class="modal-panel">
+      <button class="modal-close" data-close-modal aria-label="Cerrar">×</button>
+      <p class="eyebrow">NAVEGACIÓN</p><h2 id="helpTitle">Atajos para exponer con fluidez</h2>
+      <div class="shortcut-grid">
+        <div><kbd>→</kbd><span>Siguiente etapa</span></div><div><kbd>←</kbd><span>Etapa anterior</span></div>
+        <div><kbd>F</kbd><span>Pantalla completa</span></div><div><kbd>G</kbd><span>Guía del expositor</span></div>
+        <div><kbd>M</kbd><span>Menú de ejercicios</span></div><div><kbd>R</kbd><span>Reiniciar ejercicio</span></div>
+        <div><kbd>Esc</kbd><span>Salir o cerrar</span></div><div><kbd>1–6</kbd><span>Abrir un ejercicio</span></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
