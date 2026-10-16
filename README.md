@@ -10,6 +10,13 @@ Experiencia educativa en español sobre centroide, centro de masa y centro de gr
 - Guía ocultable del expositor, fundamentos teóricos y diseño adaptable a proyector.
 - Pruebas automatizadas para los seis cálculos críticos.
 
+## Versión 2
+
+- Identidad editorial renovada y láminas científicas específicas para cada problema.
+- Controles reactivos locales: los sliders actualizan SVG y resultados sin remontar la vista.
+- Separación explícita entre la resolución oficial del folleto y el modo exploración.
+- Ilustraciones técnicas de listón, partículas, figura compuesta, camión, varilla y asteroide.
+
 ## Ejecución local
 
 ```bash
