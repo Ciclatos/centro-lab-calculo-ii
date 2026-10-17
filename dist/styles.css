@@ -28,3 +28,4 @@ body.presenting .original-statement p{font-size:1.08rem}body.presenting .math-li
 body.presenting .revealed-equation p{font-size:.9rem}body.presenting .concept-bridge span{font-size:.78rem}
 @media(max-width:720px){.concept-bridge{grid-template-columns:1fr}.gravity-contrast{grid-template-columns:1fr}.gravity-contrast>span{margin-bottom:6px}}
 body{overflow-x:hidden}
+.lab-shell{overflow:hidden}.lab-stage{min-height:0;height:calc(100vh - 72px);overflow:hidden}.step-area{overflow-y:auto;overscroll-behavior:contain;scrollbar-color:#665d51 transparent;scrollbar-width:thin;align-items:start}.lesson-copy{overflow:visible}.visual-panel{align-self:start;min-height:min(660px,calc(100vh - 284px))}body.presenting .lab-stage{height:100vh}@media(max-width:980px){.lab-shell{overflow:visible}.lab-stage{height:auto;overflow:visible}}
