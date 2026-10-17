@@ -24,6 +24,13 @@ Experiencia educativa en español sobre centroide, centro de masa y centro de gr
 - Revelación progresiva de operaciones y resultados, sincronizada con cada visualización.
 - Navegación por subpasos con teclado, retroceso reversible y reinicio pedagógico completo.
 
+## Versión 4
+
+- Derivación visual de los centroides individuales y del promedio ponderado en la figura compuesta.
+- Desarrollo físico y matemático ampliado del centro de gravedad en campo variable.
+- Explicaciones progresivas de simetría, cancelación de constantes y funciones pares e impares.
+- Guías orales actualizadas y anotaciones gráficas sincronizadas con cada revelación.
+
 ## Ejecución local
 
 ```bash

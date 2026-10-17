@@ -8,11 +8,25 @@ test('E2: centro de masa de tres partículas', () => {
   assert.equal(masses.reduce((s,p)=>s+p.m*p.x,0)/total,2.4);
   assert.equal(masses.reduce((s,p)=>s+p.m*p.y,0)/total,3.2);
 });
-test('E3: centroide vertical compuesto', () => assert.equal((16*2+6*5)/22,31/11));
+test('E3: centroides individuales y centroide vertical compuesto', () => {
+  const squareCentroid = (0 + 4) / 2;
+  const triangleCentroid = 4 + 3 / 3;
+  assert.equal(squareCentroid, 2);
+  assert.equal(triangleCentroid, 5);
+  assert.equal((16*squareCentroid+6*triangleCentroid)/22,31/11);
+});
 test('E4: centro de masa combinado y desplazamiento', () => {
   const x=(3000*3.5+2000*6)/5000; assert.equal(x,4.5); assert.equal(x-3.5,1);
 });
 test('E5: masa y centro de masa de densidad 3x²', () => { assert.equal(8,8); assert.equal(12/8,1.5); });
 test('E6: centro de gravedad con gradiente lineal', () => {
-  const k=1e-5,L=200; const z=-k*L**2/12; assert.ok(Math.abs(z+1/30)<1e-12); assert.ok(Math.abs(Math.abs(z)*100-10/3)<1e-12);
+  const k=1e-5,L=200,a=L/2;
+  const denominator = 2*a;
+  const numerator = -2*k*a**3/3;
+  const z=numerator/denominator;
+  assert.equal(denominator,200);
+  assert.ok(Math.abs(numerator+20/3)<1e-12);
+  assert.ok(Math.abs(z+k*L**2/12)<1e-12);
+  assert.ok(Math.abs(z+1/30)<1e-12);
+  assert.ok(Math.abs(Math.abs(z)*100-10/3)<1e-12);
 });
